@@ -1,8 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-
-
 class massive
 {
 public:
@@ -36,7 +34,6 @@ public:
 
 		menu();
 	}
-
 	void menu()
 	{
 		int point = -1, ind;
@@ -62,8 +59,6 @@ public:
 			}
 		} 
 	}
-
-
 	void print_math()
 	{
 		std::cout << "\nArray1= ";
@@ -96,7 +91,6 @@ public:
 					std::cout << arr1[i] / arr2[i] << ' ';
 		}
 	}
-
 	void arr_arith(std::vector <int> arr, int t)
 	{
 		std::cout << "\nArray" << t << "+const= ";
@@ -111,7 +105,6 @@ public:
 		for (int i = 0; i < arr.size(); i++)
 			std::cout << arr[i] * cons << ' ';
 	}
-
 	void sort(std::vector <int> arr, int t)
 	{
 		std::vector <int> temp = booble(arr);
@@ -123,7 +116,6 @@ public:
 		std::cout << "\nsort down Array" << t << "= ";
 		print_mass(temp);
 	}
-
 	std::vector <int> booble(std::vector <int> arr)
 	{
 		int temp;
@@ -142,8 +134,6 @@ public:
 
 		return arr;
 	}
-
-
 	void print_mass_el(std::vector <int> arr, int ind)
 	{
 		if (ind >= i_min && ind <= i_max)
@@ -159,7 +149,6 @@ public:
 		}
 	}
 };
-
 int main()
 {
 	massive M;
