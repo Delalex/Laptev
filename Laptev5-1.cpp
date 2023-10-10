@@ -8,7 +8,6 @@ public:
 	std::vector <double> mass;
 	int n;
 
-	//создание массива
 	void new_mass()
 	{
 		double temp;
@@ -28,7 +27,7 @@ public:
 	}
 
 private:
-	//выбор действия
+
 	void menu()
 	{
 		int point = -1;
@@ -54,7 +53,6 @@ private:
 		}
 	}
 
-	//добавление элемента в массив
 	void add_el()
 	{
 		double temp;
@@ -65,7 +63,6 @@ private:
 		std::cout << "+: " << mass.size() << std::endl;
 	}
 
-	//удаление элемента из массива
 	void del_el()
 	{
 		mass.pop_back();
@@ -73,7 +70,6 @@ private:
 		std::cout << "-: " << mass.size() << std::endl;
 	}
 
-	//нахождение суммы и среднего арифметического
 	void math_methods()
 	{
 		double summ = 0, arith_mean = 0;
@@ -89,7 +85,6 @@ private:
 		mass.push_back(arith_mean);
 	}
 
-	//доп задание - умножить каждое четное число на первое отрицательно число
 	void dop_quest()
 	{
 		double first_otric = 1;
@@ -112,7 +107,6 @@ private:
 		}
 	}
 
-	//вывод даных
 	void result_cout()
 	{
 		print_mass();
@@ -123,7 +117,7 @@ private:
 		dop_quest();
 		print_mass();
 	}
-	//вывод массива
+
 	void print_mass()
 	{
 		std::cout.setf(std::ios::fixed);
